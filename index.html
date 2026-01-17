@@ -29,7 +29,20 @@ header h1{margin:0;color:#4cc2ff}
 .comment-box textarea{width:100%;height:60px;margin-top:10px;border-radius:6px;border:none;padding:6px}
 .comment-box button{margin-top:6px;padding:6px 10px;background:#4cc2ff;border:none;border-radius:6px}
 .comment{font-size:12px;background:#0e1627;padding:6px;border-radius:6px;margin-top:6px}
-</style>
+</style>/* FIX: Anime details ke time search bar overlap na ho */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#anime-details,
+.anime-details,
+.modal {
+  margin-top: 80px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
 </head>
 
 <body>
@@ -219,6 +232,7 @@ fetchAnime(`query{
 </body>
 
 </html>
+
 
 
 
