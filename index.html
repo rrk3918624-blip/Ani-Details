@@ -126,7 +126,13 @@ header h1{margin:0;color:#4cc2ff;}
 <input placeholder="Search anime..." onkeyup="debouncedSearch(this.value)">
 </div>
 </header>
-
+<div class="section">
+  <p style="font-size:14px;color:#cfd8ff;line-height:1.6">
+    Ani Details is an anime information website where you can explore trending,
+    upcoming and top-rated anime. We provide anime details, ratings and fan discussions
+    to help users discover new anime easily.
+  </p>
+</div>
 <div class="section"><h2>Trending</h2><div id="trending" class="anime-grid"></div></div>
 <div class="section"><h2>Upcoming</h2><div id="upcoming" class="anime-grid"></div></div>
 <div class="section"><h2>Top Rated</h2><div id="top" class="anime-grid"></div></div>
@@ -280,3 +286,4 @@ fetchAnime(`query{Page(perPage:12){media(type:ANIME,genre_in:["Horror"],sort:POP
 </body>
 
 </html>
+
